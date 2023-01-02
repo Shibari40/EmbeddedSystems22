@@ -7,10 +7,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "memory.h"
 #include "oscillator.h"
+#include "timer.h"
 
 // CONFIG1
-    // Oscillator Selection (INTOSC oscillator: I/O function on CLKIN pin)
 #pragma config WDTE = OFF       // Watchdog Timer Enable (WDT disabled)
 #pragma config MCLRE = ON       // MCLR Pin Function Select (MCLR/VPP pin function is MCLR)
 #pragma config BOREN = ON       // Brown-out Reset Enable (Brown-out Reset enabled)

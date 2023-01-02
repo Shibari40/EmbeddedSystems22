@@ -9,7 +9,8 @@
 #include <xc.h>
 #include "oscillator.h"
 
-#pragma config FOSC = INTOSC
+#pragma config FOSC = clockmode.internal    // Oscillator Selection (internal oscillator)
+
 
 void main(void) {
     return;
