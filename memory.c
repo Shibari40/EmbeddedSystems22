@@ -1,4 +1,13 @@
+/*
+ * File:   memory.c
+ * Author: jerry
+ *
+ * Created on 02 January 2023, 15:07
+ */
+
+
 #include <xc.h>
+#include "memory.h"
 
 #pragma config WRT = OFF        // Flash Memory Self-Write Protection (Write protection off)
 #pragma config CPD = OFF        // Data Memory Code Protection (Data memory code protection is disabled)
