@@ -13,8 +13,8 @@
 #include "timer.h"
 
 // CONFIG1
-#pragma config WDTE = OFF       // Watchdog Timer Enable (WDT disabled)
-#pragma config MCLRE = ON       // MCLR Pin Function Select (MCLR/VPP pin function is MCLR)
+#pragma config WDTE = WDTE_ON       // Watchdog Timer Enable (WDT disabled)
+#pragma config MCLRE = MCLRE_ON    // MCLR Pin Function Select (MCLR/VPP pin function is MCLR)
 #pragma config BOREN = ON       // Brown-out Reset Enable (Brown-out Reset enabled)
 #pragma config IESO = ON        // Internal/External Switchover (Internal/External Switchover mode is enabled)
 #pragma config FCMEN = ON       // Fail-Safe Clock Monitor Enable (Fail-Safe Clock Monitor is enabled)

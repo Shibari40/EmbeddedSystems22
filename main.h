@@ -8,16 +8,10 @@
 #ifndef MAIN_H
 #define	MAIN_H
 
-#pragma config FOSC = INTOSC    // Oscillator Selection (INTOSC oscillator: I/O function on CLKIN pin)
-#pragma config WDTE = OFF       // Watchdog Timer Enable (WDT disabled)
-#pragma config MCLRE = ON       // MCLR Pin Function Select (MCLR/VPP pin function is MCLR)
-#pragma config BOREN = ON       // Brown-out Reset Enable (Brown-out Reset enabled)
-#pragma config IESO = ON        // Internal/External Switchover (Internal/External Switchover mode is enabled)
-#pragma config FCMEN = ON       // Fail-Safe Clock Monitor Enable (Fail-Safe Clock Monitor is enabled)
-
-// CONFIG2
-#pragma config STVREN = ON      // Stack Overflow/Underflow Reset Enable (Stack Overflow or Underflow will cause a Reset)
-#pragma config BORV = LO        // Brown-out Reset Voltage Selection (Brown-out Reset Voltage (Vbor), low trip point selected.)
+typedef enum _wdte_t{
+    WDTE_ON  = 0b1,   // Watchdog Timer Enable (WDT enabled)
+    WDTE_OFF = 0b0    // Watchdog Timer Enable (WDT disabled)
+} WDTE_t;
 
 #endif	/* MAIN_H */
 

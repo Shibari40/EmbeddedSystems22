@@ -9,7 +9,9 @@
 #include <xc.h>
 #include "oscillator.h"
 
-#pragma config FOSC = FOSC_INTOSC.    // Oscillator Selection (internal oscillator)
+#pragma config FOSC = FOSC_INTOSC.  // Oscillator Selection (internal oscillator)
+#pragma config WDTE = WDTE_OFF      // Watchdog Timer Enable (WDT disabled)
+
 // 0x38 osccon
 
 

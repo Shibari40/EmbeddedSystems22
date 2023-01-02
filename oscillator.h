@@ -17,5 +17,7 @@ typedef enum _fosc_t{
     FOSC_ECIO    = 0b111   // Oscillator Selection (ECIO oscillator: External clock source input on OSC1 pin and output on OSC2 pin)
 } ;
 
+
+
 #endif	/* OSCILLATOR_H */
 
