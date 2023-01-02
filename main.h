@@ -1,18 +1,14 @@
 /* 
- * File:   main.c
+ * File:   main.h
  * Author: jerry
  *
- * Created on December 16, 2022, 11:15 AM
+ * Created on 02 January 2023, 16:50
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
-#include "memory.h"
-#include "oscillator.h"
-#include "timer.h"
+#ifndef MAIN_H
+#define	MAIN_H
 
-// CONFIG1
+#pragma config FOSC = INTOSC    // Oscillator Selection (INTOSC oscillator: I/O function on CLKIN pin)
 #pragma config WDTE = OFF       // Watchdog Timer Enable (WDT disabled)
 #pragma config MCLRE = ON       // MCLR Pin Function Select (MCLR/VPP pin function is MCLR)
 #pragma config BOREN = ON       // Brown-out Reset Enable (Brown-out Reset enabled)
@@ -23,13 +19,5 @@
 #pragma config STVREN = ON      // Stack Overflow/Underflow Reset Enable (Stack Overflow or Underflow will cause a Reset)
 #pragma config BORV = LO        // Brown-out Reset Voltage Selection (Brown-out Reset Voltage (Vbor), low trip point selected.)
 
-#define _XTAL_FREQ 8000000     // Set clock frequency for delay functions
-
-/*
- * 
- */
-int main(int argc, char** argv) {
-
-    return (EXIT_SUCCESS);
-}
+#endif	/* MAIN_H */
 
